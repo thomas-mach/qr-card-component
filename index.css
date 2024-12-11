@@ -4,13 +4,16 @@
   --color-slate-300: #d5e1ef;
   --color-blue-600: #2c7dfa;
   --color-blue-500: #3685ff;
+  --space-200: 16px;
+  --space-300: 24px;
+  --space-500: 40px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", Arial, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -18,10 +21,13 @@
 
 body {
   background-color: var(--color-slate-300);
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .card {
-  margin: 100px auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,14 +35,13 @@ body {
   border-radius: 20px;
   width: 320px;
   height: 499px;
-  padding: 16px 16px 40px 16px;
+  padding: var(--space-200) var(--space-200) var(--space-500);
 }
 
 img {
-  width: 288px;
-  aspect-ratio: 1;
+  width: 100%;
   border-radius: 10px;
-  margin-bottom: 24px;
+  margin-bottom: var(--space-300);
 }
 
 h1 {
@@ -46,7 +51,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   color: var(--color-slate-900);
-  margin-bottom: 16px;
+  margin-bottom: var(--space-200);
 }
 
 p {
